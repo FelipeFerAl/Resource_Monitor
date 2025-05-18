@@ -19,24 +19,24 @@ Contiene los archivos correspondientes a las funciones:
 - Makefile        -> Compilación y Ejecución
 
 
-**Bloque cpuinfo_manip:**
+**1. Bloque cpuinfo_manip:**
 	
  Se ingresa al archivo "/proc/cpuinfo" y "/proc/stat" para obtener la información relacionada a las características
 (Fabricante, modelo y número de hilos) y porcentajes de uso del procesador.
 
-**Bloque meminfo_manip:**
+**2. Bloque meminfo_manip:**
 
 Se ingresa al archivo "/proc/meminfo" para tomar los datos de la memoria, convertirlos a un número legible en MB y
 observar su uso en valor porcentual.
 
-**Bloque tui:**
+**3. Bloque tui:**
 
 Asegura la interacción usuario-máquina para determinar el comportamiento del sistema.
 
-**Bloque resource_mon:**
+**4. Bloque resource_mon:**
 
 Se define la función principal del programa en base a los demás bloques.
 
-**Bloque Makefile:**
+**5. Bloque Makefile:**
 
 Se encarga de compilar y ejecutar los archivos en la carpeta 'src'.

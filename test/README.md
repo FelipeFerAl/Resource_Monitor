@@ -1,6 +1,6 @@
 # **Carpeta Test**
 
-Contiene los archivos de prueba (test) correspondientes a cada bloque funcional dentro del programa 'Resource_Monitor'.
+Esta carpeta contiene los archivos de prueba (test) correspondientes a cada bloque funcional dentro del programa 'Resource_Monitor'.
 Estas pruebas permiten verificar el correcto funcionamiento de los códigos implementados (estructuras, funciones) en los módulos 'cpuinfo_manip', 'meminfo_manip'
 y 'tui'.
 

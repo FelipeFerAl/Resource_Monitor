@@ -1,6 +1,6 @@
 # **Carpeta Source (src)**
 
-Contiene los archivos correspondientes a las funciones:
+Contiene el código fuente del programa 'Resource_monitor' organizado por bloques funcionales (cada uno con su respectivos archivos):
 
 - cpuinfo_manip.h -> Definición de las funciones (librería estándar)
 
@@ -31,11 +31,11 @@ observar su uso en valor porcentual.
 
 ### **Bloque tui:**
 
-Asegura la interacción usuario-máquina para determinar el comportamiento del sistema.
+Administra la interacción usuario-máquina para determinar el comportamiento del sistema.
 
 ### **Bloque resource_mon:**
 
-Se define la función principal del programa en base a los demás bloques.
+Contiene la función principal del programa en base a los demás bloques.
 
 ### **Bloque Makefile:**
 

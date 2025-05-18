@@ -37,6 +37,9 @@ Administra la interacción usuario-máquina para determinar el comportamiento de
 
 Contiene la función principal del programa en base a los demás bloques.
 
-### **Bloque Makefile:**
+### **Makefile:**
 
-Se encarga de compilar y ejecutar los archivos en la carpeta 'src'.
+Se encarga de compilar y ejecutar los archivos en la carpeta 'src' con el comando:
+
+```bash
+make

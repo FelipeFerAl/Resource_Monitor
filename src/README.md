@@ -1,4 +1,4 @@
-**Carpeta Source (src):**
+# **Carpeta Source (src)**
 
 Contiene los archivos correspondientes a las funciones:
 
@@ -19,24 +19,24 @@ Contiene los archivos correspondientes a las funciones:
 - Makefile        -> Compilación y Ejecución
 
 
-**1. Bloque cpuinfo_manip:**
+### **Bloque cpuinfo_manip:**
 	
  Se ingresa al archivo "/proc/cpuinfo" y "/proc/stat" para obtener la información relacionada a las características
 (Fabricante, modelo y número de hilos) y porcentajes de uso del procesador.
 
-**2. Bloque meminfo_manip:**
+### **Bloque meminfo_manip:**
 
 Se ingresa al archivo "/proc/meminfo" para tomar los datos de la memoria, convertirlos a un número legible en MB y
 observar su uso en valor porcentual.
 
-**3. Bloque tui:**
+### **Bloque tui:**
 
 Asegura la interacción usuario-máquina para determinar el comportamiento del sistema.
 
-**4. Bloque resource_mon:**
+### **Bloque resource_mon:**
 
 Se define la función principal del programa en base a los demás bloques.
 
-**5. Bloque Makefile:**
+### **Bloque Makefile:**
 
 Se encarga de compilar y ejecutar los archivos en la carpeta 'src'.

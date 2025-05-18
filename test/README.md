@@ -27,6 +27,8 @@ Verifica las funciones del módulo 'tui', que se encarga de la interacción usua
 - **Valores esperados**:
   - La información debe mostrarse correctamente en la termnial durante la ejecución.
   - El programa debe finalizar correctamente al presionar la letra q, ctrl + c o al cerrar la terminal.
- 
 
-
+### **Makefile**:
+Desde la carpeta principal del proyecto, se puede compilar estos test con el comando:
+```bash
+make tests

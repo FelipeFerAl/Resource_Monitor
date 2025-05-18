@@ -1,6 +1,6 @@
 # **Carpeta Source (src)**
 
-Contiene el código fuente del programa 'Resource_monitor' organizado por bloques funcionales (cada uno con su respectivos archivos):
+Esta carpeta contiene el código fuente del programa 'Resource_monitor' organizado por bloques funcionales (cada uno con sus respectivos archivos):
 
 - cpuinfo_manip.h -> Definición de las funciones (librería estándar)
 

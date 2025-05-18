@@ -1,13 +1,102 @@
-Taller #1 de Programación de Sistemas Linux Embebidos
+# Taller #1 de Programación de Sistemas Linux Embebidos
 
-Diseñado por:
+Programa para monitoreo de los recursos del sistema en Linux llamado 'Resource Monitor'.
 
-Felipe Fernández Alzate   - C.C.1056120378
+## Autores:
 
-Gabriela Romo Mendoza     - C.C.1080691539
+- Cristian Marcelo Quenguan Malte - C.C.1004532387
+- Felipe Fernández Alzate - C.C.1056120378
+- Gabriela Romo Mendoza - C.C.1080691539
+- Paulina Ruiz Bonilla - C.C.1002609493
 
-Paulina Ruiz Bonilla      - C.C.1002609493
+## Descripción:
 
-Cristian Marcelo Quenguan - C.C.1004532387
+'Resource_Monitor' es una interfaz de línea de comandos (CLI) que muestra en tiempo real la información sobre el estado de
+los recursos del sistema mediante Linux, incluyendo el uso de CPU por hilo y memoria RAM. El código del programa esta desarrollado
+en lenguaje C, organizado por módulos y con un desarrollo orientado a pruebas (test driven development).
+
+## Objetivos: 
+- Fortalecer habilidades de trabajo colaborativo mediante el uso de `git` y plataformas como GitHub.
+- Familiarizarse con la herramienta GNU make para automatizar la gestión de compilado y
+enlazado de proyectos en C y/o C++.
+- Familiarizarse con elementos del desarrollo de software con base en requerimientos y del
+desarrollo orientado a pruebas (test driven development).
+- Fortalecer las competencias relacionadas con la generación de documentación técnica efectiva.
+
+## Funcionalidades:
+- Imprime el nombre del modelo y fabricante de la CPU.
+- Indica el número de núcleos fisicos, núcleos virtuales y número total de hilos.
+- Muestra el porcentaje de uso por cada hilo.
+- Indica la cantidad total de memoria RAM y swap en MB.
+- Calcula y muestra el porcentaje de uso de RAM y swap.
+- Controla la interfaz de usuario en la terminal (con actualizaciones a tiempo real).
+- El programa tiene tres modos de cierre: presionando la letra 'q', con 'ctrl + c' o al cerrar la terminal.
+
+## Estructura del proyecto:
+```bash
+Resource_Monitor
+├── Makefile # Script principal de compilación
+├── README.md # Este archivo
+├── bin # Ejecutables compilados
+│   ├── cpuinfo_test
+│   ├── meminfo_test
+│   ├── resource_mon
+│   └── tui_test
+├── obj # Archivos Objeto (.o)
+│   ├── README.md
+│   ├── cpuinfo_manip.o
+│   ├── meminfo_manip.o
+│   ├── resource_mon.o
+│   └── tui.o
+├── src # Código fuente del programa
+│   ├── Makefile
+│   ├── README.md
+│   ├── cpuinfo_manip.c
+│   ├── cpuinfo_manip.h
+│   ├── meminfo_manip.c
+│   ├── meminfo_manip.h
+│   ├── resource_mon.c
+│   ├── tui.c
+│   └── tui.h
+└── test # Archivos de prueba
+    ├── README.md
+    └── src
+        ├── cpuinfo_test.c
+        ├── meminfo_test.c
+        └── tui_test.c
+```
+## Compilación:
+Desde la carpeta principal del proyecto, se pueden usar los siguientes comandos:
+- `make` - Compila todo el proyecto.
+- `make resource_mon` - Compila solo el ejecutable principal.
+- `make tests` - Compila los ejecutables de prueba (`cpuinfo_test`, `meminfo_test`, `tui_test`).
+- `make all` - Compila todos los ejecutables existentes.
+- `make clean` - Elimina archivos `.o` y ejecutables generados.
+> Los archivos `.o` se almacenan en 'obj' y los ejecutables se almacenan en 'bin'.
+
+## Ejecución:
+Desde la carpeta principal:
+``` bash
+./bin/resource_mon
+```
+Obteniendo como resultado de la ejecución total:
+``` bash
+- Aquí va lo que imprime el código :D
+```
+
+## Detalles de implementación por módulo: 
+### Módulo `cpuinfo_manip`
+Funciones que acceden a `/proc/cpuinfo` y `/proc/stat` para obtener datos sobre el procesador y el uso de cada hilo.
+``` bash
+como se ve cada función ej: cpu_model(char *model ...) #Obtiene el nombre y fabricante ... etc. y asi con todas, solo los titulos no el código obvi
+y todas juntas como una listica :)
+```
+lo mismo que arriba para el resto de los módulos
+### Módulo `meminfo_manip`
+### Módulo `tui`
+### Archivo `resource_mon`
+Contiene la función principal `main()` que:
+## Requisitos
+
 
 

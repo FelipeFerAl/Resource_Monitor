@@ -36,8 +36,7 @@ void set_input_mode(int enable) {
     static struct termios oldt, newt;
 
     if (!enable) {
-        tcsetattr(STDIN_FILENO, TCSAN
-OW, &oldt);
+        tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
         return;
     }
 

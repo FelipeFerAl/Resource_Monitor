@@ -1,8 +1,6 @@
-#include "cpuinfo_manip.h"
-#include "meminfo_manip.h"
 #include "tui.h"
 
 int main() {
-    print_info();
+    start_interface();  // Ejecuta, actualiza, limpia y recibe lectura del teclado
     return 0;
 }

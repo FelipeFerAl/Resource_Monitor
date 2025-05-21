@@ -24,14 +24,14 @@ Esta carpeta contiene el código fuente del programa 'Resource_monitor' organiza
 ### **- Bloque cpuinfo_manip:**
 
 Este archivo implementa una serie de funciones para extraer información del sistema relacionado con la CPU, usando el archivo `/proc/cpuinfo` y `/proc/stat`. 
-  ###cpu_model_fabric(char *model, char *fabric): 
+  ##cpu_model_fabric(char *model, char *fabric): 
   Obtiene el modelo del procesador (model name) y el fabricante (vendor_id) y    los guarda en las variables correspondientes.
 
-  ###virtual_cores(int *count): Cuenta el número total de hilos de ejecución     lógicos (núcleos virtuales) disponibles.
+  ##virtual_cores(int *count): Cuenta el número total de hilos de ejecución     lógicos (núcleos virtuales) disponibles.
 
-  ###real_cores(int *cores): Obtiene el número de núcleos físicos (cpu_cores)     del sistema. 
+  ##real_cores(int *cores): Obtiene el número de núcleos físicos (cpu_cores)     del sistema. 
 
-  ###cpu_usage(): Ejecuta el comando mpstat para mostrar el porcentaje de uso     de CPU por cada hilo lógico.
+  ##cpu_usage(): Ejecuta el comando mpstat para mostrar el porcentaje de uso     de CPU por cada hilo lógico.
 
 ### **- Bloque meminfo_manip:**
 

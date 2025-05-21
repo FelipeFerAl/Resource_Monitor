@@ -27,11 +27,14 @@ Este archivo implementa una serie de funciones para extraer información del sis
   ## cpu_model_fabric(char *model, char *fabric): 
   Obtiene el modelo del procesador (model name) y el fabricante (vendor_id) y    los guarda en las variables correspondientes.
 
-  ## virtual_cores(int *count): Cuenta el número total de hilos de ejecución lógicos (núcleos virtuales) disponibles.
+  # virtual_cores(int *count): 
+  Cuenta el número total de hilos de ejecución lógicos (núcleos virtuales) disponibles.
 
-  ## real_cores(int *cores): Obtiene el número de núcleos físicos (cpu_cores) del sistema. 
+  # real_cores(int *cores): 
+  Obtiene el número de núcleos físicos (cpu_cores) del sistema. 
 
-  ## cpu_usage(): Ejecuta el comando mpstat para mostrar el porcentaje de uso de CPU por cada hilo lógico.
+  # cpu_usage(): 
+  Ejecuta el comando mpstat para mostrar el porcentaje de uso de CPU por cada hilo lógico.
 
 ### **- Bloque meminfo_manip:**
 
@@ -50,7 +53,8 @@ Este archivo proporciona una función para leer y calcular el uso actual de memo
 ### **- Bloque tui:**
 Este archivo implementa una interfaz interactiva en terminal para mostrar información en tiempo real sobre el sistema, incluyendo CPU, memoria y uso de recursos
 
-  ## void print_info(void): Muestra en pantalla las variables relacionadas a las funciones vistas anteriormente, es decir: 
+  # void print_info(void): 
+  Muestra en pantalla las variables relacionadas a las funciones vistas anteriormente, es decir: 
   
     Modelo y fabricante del procesador.
     
@@ -64,9 +68,11 @@ Este archivo implementa una interfaz interactiva en terminal para mostrar inform
     
     La pantalla se limpia en cada actualización.
 
-  ## set_input_mode(int enable): Restaura la configuración del sistema al salir de la interfa, espera un tiempo mínimo para ingresar un caracter.  
+  ## set_input_mode(int enable): 
+  Restaura la configuración del sistema al salir de la interfa, espera un tiempo mínimo para ingresar un caracter.  
 
-  ## start_interface(): Inicia la visualización interactiva, actualiza la nformación del sistema cada segundo y permite al usuario salir presionando 'q' o usando Ctrl + C
+  ## start_interface(): 
+  Inicia la visualización interactiva, actualiza la nformación del sistema cada segundo y permite al usuario salir presionando 'q'   o usando Ctrl + C
   
 ### **- Bloque resource_mon:**
 

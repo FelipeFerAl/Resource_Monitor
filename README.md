@@ -81,10 +81,15 @@ Desde la carpeta principal:
 ```
 Obteniendo como resultado de la ejecución total:
 ``` bash
-- Aquí va lo que imprime el código :D
+- La información relacionada a:
+  El nombre y fabricante de la CPU del sistema; el número de núcleos y número de hilos (núcleos
+reales + núcleos virtuales); y el porcentaje de uso de cada hilo.
+  La cantidad de memoria física instalada en el sistema en MB; la cantidad de memoria de
+intercambio (swap) en MB del sistema; el porcentaje de uso de la memoria física instalada; y el
+porcentaje de uso de la memoria de intercambio.
 ```
 
-## Detalles de implementación por módulo: 
+## Descripción de la implementación por módulo: 
 
 ### Módulo `cpuinfo_manip`
 Se ingresa al archivo `/proc/cpuinfo` y `/proc/stat` para obtener la información relacionada a las características (Fabricante, modelo y número de hilos) y porcentajes de uso de cada hilo del procesador (CPU).
@@ -97,8 +102,6 @@ Administra la interacción usuario-máquina para determinar el comportamiento de
 
 ### Archivo `resource_mon`
 Contiene la función principal de ejecución del programa.
-
-## Requisitos
 
 
 

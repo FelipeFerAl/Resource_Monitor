@@ -62,26 +62,26 @@ void set_input_mode(int enable) {
  * Actualiza la pantalla cada segundo y permite salir presionando 'q' o la combinación de teclas 'ctrl + c'.
  */
 void start_interface(){
-    set_input_mode(1);
+    set_input_mode(1);                                //Habilita el modo no canonico
 
     char c = 0;
     while (1) {
-        print_info();
+        print_info();                                 //Imprime la información del sistema
 
         // Esperar 1 segundo o tecla del usuario
         fd_set set;
         struct timeval timeout;
         FD_ZERO(&set);
         FD_SET(STDIN_FILENO, &set);
-        timeout.tv_sec = 1;
+        timeout.tv_sec = 1;                            //Espera 1 segundo
         timeout.tv_usec = 0;
 
         int rv = select(STDIN_FILENO+1, &set, NULL, NULL, &timeout);
         if (rv > 0) {
-            read(STDIN_FILENO, &c, 1);
-            if (c == 'q') break;
+            read(STDIN_FILENO, &c, 1);                 //Lee el carácter ingresado
+            if (c == 'q') break;                       //Si el carácter leído es 'q' sale del bucle
         }
     }
 
-    set_input_mode(0);
+    set_input_mode(0);                                 //Restaura la configuración de terminal 
 }

@@ -22,20 +22,23 @@ Esta carpeta contiene el código fuente del programa 'Resource_monitor' organiza
 ## Funcionalidad de cada bloque:
 
 ### **- Bloque cpuinfo_manip:**
-	
-Se ingresa al archivo `/proc/cpuinfo` y `/proc/stat` para obtener la información relacionada a las características (Fabricante, modelo y número de hilos) y porcentajes de uso de cada hilo del procesador (CPU).
+
+Funciones que acceden a `/proc/cpuinfo` y `/proc/stat` para obtener datos sobre el procesador y el uso de cada hilo.
+``` bash
+como se ve cada función ej: cpu_model(char *model ...) #Obtiene el nombre y fabricante ... etc. y asi con todas, solo los titulos no el código obvi
+y todas juntas como una listica :)
+```
+lo mismo que arriba para el resto de los módulos
 
 ### **- Bloque meminfo_manip:**
 
-Se ingresa al archivo `/proc/meminfo` para tomar los datos de la memoria RAM y swap, convertirlos a un número legible en MB y observar su uso en valor porcentual.
 
 ### **- Bloque tui:**
 
-Administra la interacción usuario-máquina para determinar el comportamiento del sistema.
 
 ### **- Bloque resource_mon:**
 
-Contiene la función principal del programa en base a los demás bloques.
+Contiene la función principal `main()` que:
 
 ### **- Makefile:**
 

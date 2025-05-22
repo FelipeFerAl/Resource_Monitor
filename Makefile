@@ -61,8 +61,3 @@ clean:
 	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/*
 
 
-
-//Limpia archivos temporales: objetos y ejecutables
-clean:
-	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/*
-

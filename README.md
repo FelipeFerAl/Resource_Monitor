@@ -80,7 +80,6 @@ Desde la carpeta principal:
 ./bin/resource_mon
 ```
 Obteniendo como resultado de la ejecución total:
-``` bash
 ![WhatsApp Image 2025-05-21 at 21 08 00_df7defa7](https://github.com/user-attachments/assets/f7ff108e-8ff6-4f39-a551-8906515a35e8)
 ![WhatsApp Image 2025-05-21 at 21 08 01_51794fd9](https://github.com/user-attachments/assets/10adb175-339a-45fd-8330-d2027d22e4c8)
 Como se puede apreciar entre ambas imágenes, se dan cambios en el porcentaje de consumo en cada hilo del procesador debido a la actualización

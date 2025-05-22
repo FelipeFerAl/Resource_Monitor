@@ -81,12 +81,10 @@ Desde la carpeta principal:
 ```
 Obteniendo como resultado de la ejecución total:
 ``` bash
-- La información relacionada a:
-  El nombre y fabricante de la CPU del sistema; el número de núcleos y número de hilos (núcleos
-reales + núcleos virtuales); y el porcentaje de uso de cada hilo.
-  La cantidad de memoria física instalada en el sistema en MB; la cantidad de memoria de
-intercambio (swap) en MB del sistema; el porcentaje de uso de la memoria física instalada; y el
-porcentaje de uso de la memoria de intercambio.
+![WhatsApp Image 2025-05-21 at 21 08 00_df7defa7](https://github.com/user-attachments/assets/f7ff108e-8ff6-4f39-a551-8906515a35e8)
+![WhatsApp Image 2025-05-21 at 21 08 01_51794fd9](https://github.com/user-attachments/assets/10adb175-339a-45fd-8330-d2027d22e4c8)
+Como se puede apreciar entre ambas imágenes, se dan cambios en el porcentaje de consumo en cada hilo del procesador debido a la actualización
+constante de los datos
 ```
 
 ## Descripción de la implementación por módulo: 

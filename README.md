@@ -84,7 +84,7 @@ Obteniendo como resultado de la ejecución total:
 ![WhatsApp Image 2025-05-21 at 21 08 01_51794fd9](https://github.com/user-attachments/assets/10adb175-339a-45fd-8330-d2027d22e4c8)
 Como se puede apreciar entre ambas imágenes, se dan cambios en el porcentaje de consumo en cada hilo del procesador debido a la actualización
 constante de los datos
-```
+``` bash
 
 ## Descripción de la implementación por módulo: 
 
@@ -93,7 +93,7 @@ Se ingresa al archivo `/proc/cpuinfo` y `/proc/stat` para obtener la informació
 
 ### Módulo `meminfo_manip`
 Se ingresa al archivo `/proc/meminfo` para tomar los datos de la memoria RAM y swap, convertirlos a un número legible en MB y observar su uso en valor porcentual.
-
+```
 ### Módulo `tui`
 Administra la interacción usuario-máquina para determinar el comportamiento del sistema, incluidas funciones relacionadas a la muestra de los datos esperados con actualizaciones cada segundo, y finalización del programa (3 modos: al presionar la letra 'q', con el comando `ctrl + c` o al cerrar el terminal). 
 
